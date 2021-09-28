@@ -1,0 +1,26 @@
+import turtle as st
+
+st.speed(0)
+st.shape('circle')
+st.goto(104, 0)
+st.goto(-200, 0)
+st.shapesize(0.3)
+st.speed(10)
+
+vx = 20
+vy = 40
+dt = 2 * vy / (10 * 500)
+c = 0.8
+
+x = [0] * 500
+y = [0] * 500
+
+for j in range(3):
+    vx *= c ** j
+    vy *= c ** j
+    dt = 2 * vy / (10 * 500)
+    x[0] = x [499]
+    for i in range (500):
+    x[i] = x[0] + vx * i * dt
+    y[i] = vy * i * dt - 5 * ((dt * i) ** 2)
+    st.goto(x[i] - 200, y[i])
