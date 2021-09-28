@@ -18,4 +18,5 @@ Date:   Tue Sep 28 08:31:41 2021 +0300
     Create laba2_1
 =======
 # Laba1
+#111
 >>>>>>> origin/main
